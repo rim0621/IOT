@@ -29,6 +29,6 @@ def read_temp():
 
 while True:
   print(read_temp())
-  content = urlopen("https://api.thingspeak.com/update?api_key=8JCY69RN26C01FSV&field1="+str(read_temp()))
+  content = urlopen("https://api.thingspeak.com/update?api_key=8JCY69RN26C01FSV&field2="+str(read_temp()))
   content1 = urlopen("http://10.42.0.14:3000/jh?temp="+str(read_temp()))
   time.sleep(4)
