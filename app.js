@@ -5,7 +5,7 @@ var fs = require('fs');
 
 
 
-app.get('/', function (req, res) {
+app.get('/jh', function (req, res) {
   res.send('Hello World!');
        
     fs.appendFile('message.txt', JSON.stringify(req.query)+ "\n", function (err){ 
