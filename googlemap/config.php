@@ -2,7 +2,7 @@
 <?php
 	$db_host = 'localhost';
 	$db_user = 'root';
-	$db_passwd = '538123';
+	$db_passwd = 'password';
 	$db_name = 'test';
 	$conn = mysqli_connect($db_host, $db_user, $db_passwd, $db_name);
 	if($conn) 
